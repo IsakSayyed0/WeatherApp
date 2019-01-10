@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".TodayFragment">
+
+   <LinearLayout
+       android:visibility="gone"
+       android:elevation="15dp"
+       android:orientation="vertical"
+       android:id="@+id/weather_panel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="30sp"
+           android:id="@+id/cityName"
+           android:text="Mumbai"
+           android:textColor="@color/colorPrimary"
+           android:textStyle="bold"/>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/weatherImage"
+               android:layout_width="80dp"
+               android:src="@drawable/ic_launcher_background"
+               android:layout_height="80dp" />
+
+           <TextView
+               android:layout_margin="8dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="50sp"
+               android:id="@+id/temperature"
+               android:text="5C"
+               android:textColor="@color/colorPrimary"
+               android:textStyle="bold"/>
+
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="18sp"
+           android:id="@+id/decription"
+           android:text="Mumbai is always humid"
+           android:textColor="@color/colorPrimary"
+           android:textStyle="bold"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="18sp"
+           android:id="@+id/dateTime"
+           android:text="29/08/1989"
+           android:textColor="@color/colorPrimary"
+           android:textStyle="bold"/>
+
+       <TableLayout
+           android:layout_marginTop="10dp"
+           android:padding="16dp"
+           android:background="@drawable/border"
+           android:stretchColumns="*"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               >
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Wind"
+                   android:background="@drawable/cell"
+                   />
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txtWind"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Speed1 Deg:1"
+                   android:background="@drawable/cell"
+                   />
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               >
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Preesure"
+                   android:background="@drawable/cell"
+                   />
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txtPressure"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="151.22hpa"
+                   android:background="@drawable/cell"
+                   />
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               >
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Humdity"
+                   android:background="@drawable/cell"
+                   />
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txtHumdity"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="100%"
+                   android:background="@drawable/cell"
+                   />
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               >
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sunries"
+                   android:background="@drawable/cell"
+                   />
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txtSunrise"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="11:00"
+                   android:background="@drawable/cell"
+                   />
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               >
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sunset"
+                   android:background="@drawable/cell"
+                   />
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txtSunset"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="18:00"
+                   android:background="@drawable/cell"
+                   />
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               >
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Geo coord"
+                   android:background="@drawable/cell"
+                   />
+               <TextView
+                   android:layout_marginLeft="8dp"
+                   android:layout_column="1"
+                   android:id="@+id/txtGeoCoord"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="159,-25.3"
+                   android:background="@drawable/cell"
+                   />
+           </TableRow>
+
+       </TableLayout>
+
+   </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
